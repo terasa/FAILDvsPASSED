@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          chmod + x s.sh
+          chmod +x s.sh
           ./s.sh
 
       # Runs a set of commands using the runners shell
