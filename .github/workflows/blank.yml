@@ -34,9 +34,22 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: hej
         run: |
-          echo PASS,
-          echo FAIL.
-          echo moj test [PASS]
-          echo inny test [PASSED]
-          echo a ten FAILED
-          echo test 
+           echo "Color test:"
+           echo "-----------"
+           echo -e "\033[30;1m This is   ansi_bold black\033[0;m"
+           echo -e "\033[31;1m This is     ansi_bold_red\033[0;m"
+           echo -e "\033[32;1m This is   ansi_bold green\033[0;m"
+           echo -e "\033[33;1m This is  ansi_bold yellow\033[0;m"
+           echo -e "\033[34;1m This is    ansi_bold blue\033[0;m"
+           echo -e "\033[35;1m This is ansi_bold magenta\033[0;m"
+           echo -e "\033[36;1m This is    ansi_bold cyan\033[0;m"
+           echo -e "\033[37;1m This is   ansi_bold white\033[0;m"
+           echo -e "\033[30m This is normal   ansi_black / \033[90m and the light   black variant\033[0;m"
+           echo -e "\033[31m This is normal     ansi_red / \033[91m and the light    red  variant\033[0;m"
+           echo -e "\033[32m This is normal   ansi_green / \033[92m and the light   green variant\033[0;m"
+           echo -e "\033[33m This is normal  ansi_yellow / \033[93m and the light  yellow variant\033[0;m"
+           echo -e "\033[34m This is normal    ansi_blue / \033[94m and the light   blue  variant\033[0;m"
+           echo -e "\033[35m This is normal ansi_magenta / \033[95m and the light magenta variant\033[0;m"
+           echo -e "\033[36m This is normal    ansi_cyan / \033[96m and the light   cyan  variant\033[0;m"
+           echo -e "\033[37m This is normal   ansi_white / \033[97m and the light  white  variant\033[0;m"
+
